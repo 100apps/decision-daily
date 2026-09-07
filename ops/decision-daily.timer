@@ -1,0 +1,12 @@
+[Unit]
+Description=Decision intelligence daily at 09:00 Asia/Shanghai
+
+[Timer]
+OnCalendar=*-*-* 09:00:00 Asia/Shanghai
+Persistent=true
+AccuracySec=1s
+RandomizedDelaySec=0
+Unit=decision-daily.service
+
+[Install]
+WantedBy=timers.target

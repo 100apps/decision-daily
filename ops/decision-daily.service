@@ -1,0 +1,19 @@
+[Unit]
+Description=Generate and publish Chinese decision intelligence daily
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=6h
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/data/ai调研
+Environment=PATH=/root/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=TZ=Asia/Shanghai
+ExecStart=/data/ai调研/.venv/bin/python /data/ai调研/scripts/run_daily.py
+TimeoutStartSec=2h
+Restart=on-failure
+RestartSec=15min
+UMask=0077
+

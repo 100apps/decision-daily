@@ -1,0 +1,9 @@
+.venv/
+.runtime/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+/reports/
+/output/
+/.playwright-cli/

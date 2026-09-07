@@ -1,0 +1,10 @@
+{
+  "title": "决策情报日报",
+  "repository": "100apps/decision-daily",
+  "base_url": "https://100apps.github.io/decision-daily",
+  "timezone": "Asia/Shanghai",
+  "schedule": "09:00",
+  "min_items": 10,
+  "max_items": 20,
+  "runtime_retention_days": 90
+}

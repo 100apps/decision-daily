@@ -1,0 +1,4 @@
+Markdown==3.8.2
+bleach==6.2.0
+PyYAML==6.0.2
+webencodings==0.5.1
